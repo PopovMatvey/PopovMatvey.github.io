@@ -1,0 +1,334 @@
+/* Блок "Обо мне" */
+
+/* Заголовок "Обо мне" */
+.about-me__title {
+    opacity: 0;
+}
+
+.about-me__title__animation {
+    opacity: 1;
+    transition: all 2s;
+}
+
+/* *.about-me__title {
+    opacity: 1;
+} */
+
+/* Картинка "Обо мне" */
+.about-me_img {
+    opacity: 0;
+}
+
+.about_me_img_animation {
+    -webkit-animation: jackInTheBox 3s forwards;
+    -o-animation: jackInTheBox 3s forwards;
+    animation: jackInTheBox 3s forwards;
+}
+
+/* *.about-me_img {
+    opacity: 1;
+} */
+
+/* Текст "Обо мне" */
+.about-me_text {
+    opacity: 0;
+}
+
+.about_me_text_animation {
+    opacity: 1;
+    transition: opacity 0.5s;
+    -webkit-animation: flipInX 5s forwards;
+    -o-animation: flipInX 5s forwards;
+    animation: flipInX 5s forwards;
+}
+
+/* *.about-me_text {
+    opacity: 1;
+} */
+
+/* Кнопка скачать резюме */
+
+.about-me_button {
+    opacity: 0;
+}
+
+.about-me_button_animation {
+    opacity: 1;
+    transition: opacity 2s;
+    -webkit-animation: fadeInUpBig 2s forwards;
+    -o-animation: fadeInUpBig 2s forwards;
+    animation: fadeInUpBig 2s forwards;
+}
+
+/* *.about-me_button {
+    opacity: 1;
+} */
+
+/* Что я умею */
+
+/* Заколовок Что я умею */
+.title_my_skills {
+    opacity: 0;
+}
+
+.title_my_skills_animation {
+    opacity: 1;
+    transition: all 2s;
+}
+
+/* *.title_my_skills {
+    opacity: 1;
+} */
+
+
+/* Блок "Веб дизайн" */
+.web-desine {
+    opacity: 0;
+}
+
+.web-desine_animation {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-animation: bounceInLeft 2s forwards;
+    -o-animation: bounceInLeft 2s forwards;
+    animation: bounceInLeft 2s forwards;
+}
+
+/* *.web-desine {
+    opacity: 1;
+} */
+
+/* Блок "Разработка" */
+.development {
+    opacity: 0;
+}
+
+.development_animation {
+    opacity: 1;
+    transition: all 1s 1s;
+    -webkit-animation: bounceInDown 2s forwards;
+    -o-animation: bounceInDown 2s forwards;
+    animation: bounceInDown 2s forwards;
+    animation-delay: 1s;
+}
+
+/* *.development {
+    opacity: 1;
+} */
+
+
+/* Блок "СЕО оптимизация" */
+.ceo {
+    opacity: 0;
+}
+
+.ceo_animation {
+    opacity: 1;
+    transition: all 1s 2s;
+    -webkit-animation: bounceInUp 2s forwards;
+    -o-animation: bounceInUp 2s forwards;
+    animation: bounceInUp 2s forwards;
+    animation-delay: 2s;
+}
+
+/* *.ceo {
+    opacity: 1;
+} */
+
+/* Блок "Маркетинг" */
+.marketing {
+    opacity: 0;
+}
+
+.marketing_animation {
+    opacity: 1;
+    transition: all 1s 3s;
+    -webkit-animation: bounceInRight 2s forwards;
+    -o-animation: bounceInRight 2s forwards;
+    animation: bounceInRight 2s forwards;
+    animation-delay: 3s;
+}
+
+/* *.marketing {
+    opacity: 1;
+} */
+
+@media screen and (max-width:991px) {
+
+    .web-desine_animation {
+        animation-delay: 0s;
+    }
+
+    .development_animation {
+        animation-delay: 1s;
+    }
+
+    .ceo_animation {
+        animation-delay: 0s;
+    }
+
+    .marketing_animation {
+        animation-delay: 1s;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .web-desine_animation {
+        animation-delay: 0s;
+    }
+
+    .development_animation {
+        animation-delay: 0s;
+    }
+
+    .ceo_animation {
+        animation-delay: 0s;
+    }
+
+    .marketing_animation {
+        animation-delay: 0s;
+    }
+}
+
+/* Навыки */
+
+/* Кольцо навыков */
+.progress-ring-block {
+    opacity: 0;
+    transition: 5s all;
+}
+
+.progress-ring-block_animation {
+    opacity: 1;
+}
+
+/* *.progress-ring-block {
+    opacity: 1
+} */
+
+/* Название навыка */
+.progress-name {
+    opacity: 0;
+    transition: 5s all;
+}
+
+.progress-name_animation {
+    opacity: 1;
+}
+
+/* *.progress-name {
+    opacity: 1;
+} */
+
+@media screen and (max-width:991px) {
+
+    .progress-ring-block {
+        transition: 1s all;
+    }
+
+    .progress-name {
+        transition: 1s all;
+    }
+}
+
+/* Портфолио */
+
+/* Заголовор портфолио */
+.portfolio-title {
+    opacity: 0;
+}
+
+
+.portfolio-title_animation {
+    opacity: 1;
+    transition: all 2s;
+    -webkit-animation: zoomInUp 3s forwards;
+    -o-animation: zoomInUp 3s forwards;
+    animation: zoomInUp 3s forwards;
+}
+
+/* *.portfolio-title {
+    opacity: 1;
+} */
+
+/* Слайдер */
+.slider_pattern {
+    opacity: 0;
+}
+
+.slider_animation {
+    opacity: 1;
+    transition: all 2s;
+    -webkit-animation: jackInTheBox 3s forwards;
+    -o-animation: jackInTheBox 3s forwards;
+    animation: jackInTheBox 3s forwards;
+}
+
+/* *.slider_pattern {
+    opacity: 1;
+} */
+
+
+/* Описание прокта */
+.portfolio-base {
+    opacity: 0;
+}
+
+.portfolio-base_animation {
+    opacity: 1;
+    transition: all 3s;
+}
+
+/* 
+*.portfolio-base {
+    opacity: 1;
+} */
+
+
+/* Калькулятор  */
+/* *#calculator{
+    display: none;
+} */
+
+.calculator_animation {
+    opacity: 1;
+    transition: all 2s;
+    -webkit-animation: lightSpeedInLeft 3s forwards;
+    -o-animation: lightSpeedInLeft 3s forwards;
+    animation: lightSpeedInLeft 3s forwards;
+}
+
+/* Статистика */
+.statistic {
+    opacity: 0;
+}
+
+.statistics_animation {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-animation: slideInUp 2s forwards;
+    --o--animation: slideInUp 2s forwards;
+    animation: slideInUp 2s forwards;
+}
+
+/* *.statistic {
+    opacity: 1;
+} */
+
+/* Отзывы */
+.reviews {
+    opacity: 0;
+}
+
+.reviews_animation {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-animation: rotateInUpRight 2s forwards;
+    -o-animation: rotateInUpRight 2s forwards;
+    animation: rotateInUpRight 2s forwards;
+}
+
+/* *.reviews {
+    opacity: 1;
+} */

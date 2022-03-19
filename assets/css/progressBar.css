@@ -1,0 +1,75 @@
+body {
+    background-color: aquamarine;
+}
+
+.ring {
+    width: 200px;
+    height: 200px;
+}
+
+.main-ring {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 0;
+}
+
+.progress-ring {
+    z-index: 60;
+}
+
+.progress-ring-block {
+    position: relative;
+    width: 210px;
+    margin: 10px auto 0px auto;
+}
+
+.progress-ring__circle {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: 2s stroke-dashoffset;
+}
+
+
+
+.progress-ring-block h4 {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 33%;
+    top: 40%;
+    text-shadow: 2px 2px 3px black;
+}
+
+.precent{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 54%;
+    top: 40%;
+    text-shadow: 2px 2px 3px black;
+}
+
+.skills_diagramm h3 {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0px 0px -8px;
+    text-shadow: 2px 2px 3px black;
+}
+
+
+
+@media screen and (max-width:1200px) {
+
+    .skills_diagramm h3 {
+        margin: 10px -25px 0px 25px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .skills_diagramm h3 {
+        margin: 10px auto 0px auto;
+    }
+}
