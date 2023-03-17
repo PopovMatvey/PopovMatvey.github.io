@@ -2,8 +2,9 @@
 .header-information {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    padding: 20px 50px;
 }
 
 .header-information h1 {
