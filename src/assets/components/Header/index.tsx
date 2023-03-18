@@ -1,12 +1,14 @@
 import React from "react";
-import '../css/Header.css';
-import { HeaderInformation } from "./HeaderInformation";
+import './style.css';
+import { HeaderInformation } from "../HeaderInformation";
+import { Menu } from "../Menu";
 
 export function Header(){
 
     return(
         <header>
             <HeaderInformation/>
+            <Menu/>
         </header>
     );
 }

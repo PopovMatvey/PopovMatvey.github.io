@@ -1,14 +1,15 @@
 import React from 'react';
-import { Header } from './Header';
-import { Footer } from './Footer';
-import '../css/App.css';
+import { Header } from '../Header/index';
+import { Footer } from '../Footer/index';
+import './style.css';
+import { Title } from '../Title';
 
 function App() {
   return (
     <>
       <Header />
       <div className="main-content">
-        <h1>Пока что ничего нет</h1>
+        <Title title={"erfwe"}/>
       </div>
       <Footer />
     </>

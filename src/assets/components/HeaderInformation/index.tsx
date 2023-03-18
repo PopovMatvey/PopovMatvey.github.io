@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/HeaderInformation.css';
+import './style.css';
 
 export function HeaderInformation() {
     return (

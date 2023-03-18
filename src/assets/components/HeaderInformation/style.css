@@ -1,10 +1,11 @@
 /* Стили информации "Шапки" */
 .header-information {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px 50px;
+    width: 50%;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    padding: 20px 0px 20px 50px;
+    border: 2px solid black;
 }
 
 .header-information h1 {
