@@ -1,0 +1,440 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'FranklinGot';
+    src: url('../fonts/framd.eot');
+    src: local('☺'), url('../fonts/framd.woff') format('woff'), url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: swap;
+}
+
+
+/* Начальные стили */
+
+body {
+    font-family: "FranklinGot";
+    width: 100%;
+    min-width: 300px;
+    background: url('../img/main-background-min.jpg') 0% 0% / 100% 100%;
+    background-attachment: fixed;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 50px;
+    padding: 60px 0px 40px 0px;
+    text-transform: uppercase;
+}
+
+h2::after {
+    content: "";
+    width: 100px;
+    display: block;
+    margin: 20px auto 0px auto;
+    border: 2px solid #11d436;
+    background: #11d436;
+}
+
+span {
+    font-size: 16px;
+}
+
+/* navbar */
+
+header {
+    background: #396579;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav {
+    font-family: "FranklinGot";
+    width: 100%;
+    height: 75px;
+    background: #396579;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo span {
+    font-size: 40px;
+    color: white;
+    opacity: 0;
+    -webkit-animation: comming 2s 1s ease forwards;
+    -o-animation: comming 2s 1s ease forwards;
+    animation: comming 2s 1s ease forwards;
+}
+
+
+.menu li {
+    float: left;
+    color: #fff;
+    margin-right: 40px;
+    text-transform: uppercase;
+    opacity: 0;
+    -webkit-animation: topShift 0.3s ease forwards;
+    -o-animation: topShift 0.3s ease forwards;
+    animation: topShift 0.3s ease forwards;
+    list-style: none;
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 1.5s;
+}
+
+.menu li:nth-child(7) {
+    animation-delay: 1.8s;
+}
+
+.menu li a:visited {
+    color: white;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    transform: scale(1);
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.menu li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: #11d436;
+    transition: 0.5s all;
+}
+
+.menu li a:hover:after {
+    border: 1px solid #11d436;
+}
+
+.menu li a:hover {
+    color: #11d436;
+}
+
+.menu li a:active {
+    transform: scale(1.1);
+}
+
+
+
+.active {
+    font-size: 28px;
+}
+
+@media screen and (max-width:1515px) {
+    .logo span {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1475px) {
+    .menu li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .menu li {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:1135px) {
+    .logo span {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:991px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-manip {
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    header {
+        z-index: 100;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: none;
+
+    }
+
+    ul {
+        padding-left: 0rem;
+    }
+
+    .menu-mobile {
+        width: 100%;
+        overflow-y: auto;
+        height: 235px;
+    }
+
+    .menu-mobile li {
+        width: 100%;
+        padding: 5px 0px 10px 0px;
+        font-size: 16px;
+    }
+
+
+    .menu-mobile li a {
+        color: white;
+        transform: scale(1);
+        transition: 0.5s all
+    }
+
+    .menu-mobile li a::after {
+        content: "";
+        display: block;
+        width: 10%;
+        margin: auto;
+        background: #11d436;
+        transition: 0.5s all;
+    }
+
+
+    .menu-mobile li a:hover:after {
+        border: 1px solid #11d436;
+    }
+
+    .menu-mobile li a:hover {
+        color: #11d436;
+    }
+
+    .menu-mobile li:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-manip {
+        width: 20px;
+        height: 20px;
+        border: 1.5px solid black;
+        background: none;
+        transition: 0.5s all;
+    }
+
+    .menu-manip:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+@media screen and (max-width:630px) {
+    .logo span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:302px) {
+    .logo span {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height:500px) {
+    .menu-mobile {
+        height: 150px;
+    }
+}
+
+@media screen and (max-height:400px) {
+    .menu-mobile {
+        height: 100px;
+    }
+}
+
+@media screen and (max-height:300px) {
+    .menu-mobile {
+        height: 50px;
+    }
+}
+
+/* Основной контент */
+
+.main_begin-page {
+    position: relative;
+}
+
+.loader {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    color: #396579;
+    transform: scale(5);
+    z-index: 5;
+    -webkit-animation: hide_loader 2s ease forwards;
+    -o-animation: hide_loader 2s ease forwards;
+    animation: hide_loader 2s ease forwards;
+}
+
+.begin-page {
+    margin: 175px 0px 0px 0px;
+}
+
+.begin-page_title {
+    opacity: 0;
+    -webkit-animation: move 2s 2s ease forwards;
+    -o-animation: move 2s 2s ease forwards;
+    animation: move 2s 2s ease forwards;
+}
+
+.begin-page_title h1 {
+    font-size: 85px;
+    line-height: 85px;
+}
+
+.begin-page_title h4 {
+    font-size: 25px;
+    margin: 15px 0px 15px 0px;
+    color: #666666;
+}
+
+.begin-page_title_buttons {
+    display: flex;
+    justify-content: center;
+    background: none;
+}
+
+.begin-page_title a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #666666;
+    color: #666666;
+    border-radius: 3px;
+    background: none;
+    margin: 0px 30px 0px 30px;
+    transform: scale(1);
+    transition: 1s all;
+}
+
+.begin-page_title a:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.begin-page_title a:active {
+    transform: scale(1.1);
+}
+
+.begin-page_img {
+    opacity: 0;
+    -webkit-animation: emergence 2s 2s forwards;
+    -o-animation: emergence 2s 2s forwards;
+    animation: emergence 2s 2s forwards;
+    z-index: 2;
+}
+
+.begin-page_shadow {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+
+@media screen and (max-width:991px) {
+
+    .main_begin-page {
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 50;
+    }
+
+    .begin-page_title {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        z-index: 30;
+    }
+
+    .begin-page_title h1 {
+        color: white;
+    }
+
+    .begin-page_title h4 {
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .begin-page_img {
+        z-index: 10;
+    }
+
+    .begin-page_title a {
+        border: 2px solid white;
+        color: white;
+        background: rgba(0, 0, 0,0.5);
+        text-shadow: 2px 3px 2px black;
+        transition: 1s all;
+    }
+
+    .begin-page_title a:hover {
+        background: rgba(255, 255, 255, 0.7);
+        color: black;
+    }
+
+    .loader {
+        color: white;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .begin-page_title h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+}
+
+
+@media screen and (max-width:460px) {
+    .begin-page_title h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .begin-page_title h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .begin-page_title h4 {
+        font-size: 20px;
+    }
+
+}

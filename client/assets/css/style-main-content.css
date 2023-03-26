@@ -1,0 +1,412 @@
+/* Обо мне */
+
+.about-me_img {
+    height: 260px;
+    width: 225px;
+}
+
+.about-me_text {
+    color: #666666;
+    font-size: 20px;
+    margin: 5px 0px 5px 0px;
+}
+
+.about-me_button a {
+    width: 160px;
+    height: 30px;
+    font-size: 20px;
+    color: #666666;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid #666;
+    margin: auto;
+    transform: scale(1);
+    transition: 1s all;
+}
+
+.about-me_button a:hover {
+    background-color: black;
+    color: white;
+}
+
+.about-me_button a:active {
+    transform: scale(1.1);
+}
+
+
+/* Что я умею */
+
+.main_my-skills {
+    background: url('../img/my_skills_bg-min.jpg') 0% 0% / 100% 100% no-repeat;
+}
+
+.my-skills-block_img {
+    width: 60px;
+    height: 65px;
+}
+
+.my-skills-blocks {
+    margin: 0px 0px 145px 0px;
+}
+
+.my-skills-block h5 {
+    font-size: 20px;
+    color: #11d436;
+}
+
+/* Навыки */
+
+.main-skills {
+    background: url('../img/backgroundskills-min.jpg') 0% 0% / 100% 200%;
+}
+
+.skills h2 {
+    color: white;
+}
+
+.skills_diagramm {
+    padding: 0px 0px 50px 0px;
+}
+
+/* Портфолио */
+
+.portfolio {
+    background: url('../img/background-portfolio-min.jpg') 0% 0% / 100% 100% no-repeat;
+}
+
+.portfolio h2 {
+    color: white;
+}
+
+.portfolio span {
+    color: white;
+}
+
+.portfolio-base-info h4 {
+    color: white;
+    font-size: 25px;
+    margin: 15px 0px 15px 0px;
+}
+
+.portfolio-base-info span {
+    color: white;
+    font-size: 18px;
+}
+
+.portfolio-base-info a {
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    background: #11d436;
+    transition: 1s all;
+    padding: 8px 0px 0px 0px;
+    text-align: center;
+    transform: scale(1);
+}
+
+.portfolio-base-info a:hover {
+    color: black;
+    background-color: white;
+}
+
+.portfolio-base-info a:active {
+    transform: scale(1.1);
+}
+
+.portfolio-discription h5 {
+    color: white;
+    font-size: 20px;
+    margin: 15px 0px 15px 0px;
+}
+
+.portfolio-discription span {
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.portfolio-discription_text li {
+    margin: 5px 0px 0px 0px;
+}
+
+@media screen and (max-width:991px) {
+    .portfolio-base-info h4 {
+        font-size: 20px;
+    }
+
+    .portfolio-discription span {
+        font-size: 18px;
+    }
+
+    ;
+}
+
+@media screen and (max-width:767px) {
+    .portfolio-base-info h4 {
+        font-size: 16px;
+    }
+
+    .portfolio-discription h5 {
+        font-size: 16px;
+    }
+
+    .portfolio-discription span {
+        font-size: 14px;
+    }
+}
+
+
+/* Калькулятор */
+
+.calculator h3 {
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.calculator select {
+    height: 70px;
+    color: #666666;
+    transition: 1s all;
+}
+
+.calculator select:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+.calculator span {
+    font-size: 16px;
+}
+
+@media screen and (max-width:1200px) {
+    .calculator h3 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .calculator h3 {
+        font-size: 18px;
+    }
+
+    .calculator span {
+        font-size: 14px
+    }
+
+    ;
+}
+
+
+/* Статистика */
+
+.statistic {
+    background: url('../img/calculator-min.jpg') 0% 0% / 100% 100% no-repeat;
+    background-attachment: fixed;
+    padding: 0px 0px 120px 0px;
+}
+
+.statistic-block h3 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.statistic-block span {
+    font-size: 20px;
+}
+
+/* Отзывы */
+
+.review_text span {
+    color: #666;
+    font-weight: bold;
+}
+
+.review_user-name h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Контакты */
+
+.contacts {
+    background: url('../img/footer-min.jpg') 0% 0% / 100% 100%;
+    color: white;
+}
+
+.contacts span {
+    font-size: 16px;
+}
+
+.contacts h3 {
+    font-size: 30px;
+}
+
+.main-contact-block_text a {
+    color: white;
+    transition: 1s all;
+}
+
+.main-contact-block_text a:hover {
+    color: rgb(119, 110, 110);
+}
+
+
+/* Форма */
+
+.form-field__data input {
+    height: 40px;
+    background: #b3c9db;
+    padding: 0px 0px 0px 25px;
+}
+
+.form-field__message textarea {
+    width: 100%;
+    height: 100px;
+    background: #b3c9db;
+    padding: 20px 0px 0px 20px;
+}
+
+.form-field__button input {
+    background: none;
+    border-radius: 3px;
+    width: 80px;
+    height: 25px;
+    border: 1px solid white;
+    color: white;
+    font-size: 12px;
+    transition: 1s all;
+    transform: scale(1);
+}
+
+.form-field__button input:hover {
+    color: black;
+    background: white;
+}
+
+.form-field__button input:active {
+    transform: scale(1.1);
+}
+
+
+/* Уведомление */
+
+.modal-content-notification {
+    background-color: #11d436;
+}
+
+.close-notification {
+    background-color: #11d436;
+    color: white;
+}
+
+.title-notification {
+    color: white;
+    text-shadow: 2px 2px 2px white;
+
+}
+
+/* Подпись */
+
+.signature {
+    background: #396579;
+    height: 70px;
+}
+
+.signature span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Модальное окно */
+.modal-title {
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.modal-text span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Анимации */
+
+/* Появление лого */
+
+@keyframes comming {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Появление пунктов меню */
+
+@keyframes topShift {
+    0% {
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+
+/* Исчезание загрузчика */
+
+@keyframes hide_loader {
+    0% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+        padding-bottom: 0px;
+    }
+}
+
+/* Появление фото на начальном экране */
+
+@keyframes emergence {
+    0% {
+        opacity: 0.3;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Выход блока заголовка на начальной странице */
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        margin-left: -500px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
