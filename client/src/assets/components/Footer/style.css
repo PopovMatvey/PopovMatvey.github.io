@@ -1,0 +1,29 @@
+/* Стили "Подвала" */
+footer{
+    width: 100%;
+    padding: 20px 0px;
+    background: #396579;
+    color: #fff;
+}
+
+footer h1{
+    font-family: 'BerlinTypeBold';
+    font-size: 30px
+}
+
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content img{
+    height: 100px;
+}
+
+footer span{
+    font-family: 'Concrete';
+    display: block;
+    text-align: center;
+}

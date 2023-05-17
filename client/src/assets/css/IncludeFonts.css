@@ -1,0 +1,33 @@
+/* Для заголовков */
+@font-face {
+    font-family: 'BerlinTypeBold';
+    src: url('../fonts/BerlinType/BerlinType-Bold.otf');
+}
+
+/* Основной текст */
+@font-face {
+    font-family: 'BerlinType';
+    src: url('../fonts/BerlinType/BerlinType-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Concrete';
+    src: url('../fonts/Concrete/Concrete-Regular.otf');
+}
+
+/* fram */
+@font-face{
+    font-family: 'fram';
+    src: url("../fonts/framd/framd.otf");
+}
+
+/* Releway */
+@font-face{
+    font-family: 'Releway-Regular';
+    src: url("../fonts/Releway/Raleway-Regular.ttf");
+}
+
+@font-face{
+    font-family: 'Releway-Light';
+    src: url("../fonts/Releway/Raleway-Light.ttf");
+}
