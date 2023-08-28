@@ -1,18 +1,72 @@
-import React from "react"
-import "./style.css"
+import React, { useState } from "react"
+import "./css/style.css"
 
 export function Menu() {
+    const [flagMobileMenuControl, setFlagMobileMenuControl] = useState(true);
+    const hrefItems = [
+        {
+            key: 0,
+            href: "",
+            title: "обо мне",
+        },
+        {
+            key: 1,
+            href: "",
+            title: "услуги",
+        },
+        {
+            key: 2,
+            href: "",
+            title: "Портфолио",
+        },
+        {
+            key: 3,
+            href: "",
+            title: "расчёт стоимости",
+        },
+        {
+            key: 4,
+            href: "",
+            title: "отзывы",
+        },
+        {
+            key: 5,
+            href: "",
+            title: "контакты",
+        },
+    ];
+
+    const hendlerMobileNemuControlButton = () => {
+        setFlagMobileMenuControl(!flagMobileMenuControl);
+    }
 
     return (
         <>
-            <div className="menu-container">
-                {/* <a href="">sd</a>
-                <a href="">sd</a>
-                <a href="">w</a>
-                <a href="">vd</a>
-                <a href="">swwe</a>
-                <a href="">vrre</a> */}
-            </div>
+
+
+            {flagMobileMenuControl ? (
+                <>
+                    <div className="menu-button-container">
+                        <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>{">"}</button>
+                    </div>
+                    <div className="menu-container">
+                        {
+                            hrefItems.map((element: any) =>
+                                <div className="menu-container_item" key={element.key}>
+                                    <a href={element.href} key={element.key}>{element.title}</a>
+                                </div>
+                            )
+                        }
+                    </div>
+                </>
+            ) : (
+                <>
+                    <div className="menu-button-container">
+                        <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>{"="}</button>
+                    </div>
+                </>
+            )
+            }
         </>
     )
 }

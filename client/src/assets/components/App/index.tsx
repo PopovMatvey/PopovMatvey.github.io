@@ -1,8 +1,8 @@
 import React from 'react';
 import { Header } from '../Header/index';
 import { Footer } from '../Footer/index';
-import './style.css';
-import { Title } from '../Title';
+import './css/style.css';
+// import { Title } from '../Title';
 import { FirstScreen } from '../FirstScreen';
 
 function App() {

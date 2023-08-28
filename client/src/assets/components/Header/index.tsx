@@ -1,13 +1,13 @@
 import React from "react";
-import './style.css';
+import './css/style.css';
 import { HeaderInformation } from "../HeaderInformation";
 import { Menu } from "../Menu";
 
-export function Header(){
+export function Header() {
 
-    return(
+    return (
         <header>
-            <HeaderInformation/>
+            <HeaderInformation />
             <Menu/>
         </header>
     );

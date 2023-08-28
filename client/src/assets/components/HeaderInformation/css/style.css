@@ -1,0 +1,12 @@
+/* Стили информации "Шапки" */
+.header-information {
+    width: 100%;
+}
+
+.header-information h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
