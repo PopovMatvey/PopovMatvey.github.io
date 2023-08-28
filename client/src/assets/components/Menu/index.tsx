@@ -3,6 +3,7 @@ import "./css/style.css"
 
 export function Menu() {
     const [flagMobileMenuControl, setFlagMobileMenuControl] = useState(true);
+    const titleString = "Popov matvey"
     const hrefItems = [
         {
             key: 0,
@@ -46,8 +47,13 @@ export function Menu() {
 
             {flagMobileMenuControl ? (
                 <>
-                    <div className="menu-button-container">
-                        <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>{">"}</button>
+                    <div className="menu-head-container">
+                        <div className="menu-title-container">
+                            <h1>{titleString}</h1>
+                        </div>
+                        <div className="menu-button-container">
+                            <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>{">"}</button>
+                        </div>
                     </div>
                     <div className="menu-container">
                         {
@@ -61,8 +67,13 @@ export function Menu() {
                 </>
             ) : (
                 <>
-                    <div className="menu-button-container">
-                        <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>{"="}</button>
+                    <div className="menu-head-container">
+                        <div className="menu-title-container">
+                            <h1>{titleString}</h1>
+                        </div>
+                        <div className="menu-button-container">
+                            <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>{"="}</button>
+                        </div>
                     </div>
                 </>
             )

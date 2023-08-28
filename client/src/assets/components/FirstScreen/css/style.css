@@ -1,5 +1,9 @@
 /* Первый экран */
 .first-screen_container {
-    height: 80vh;
+    height: 85vh;
     background: url('../../../images/common-background.svg') 0% 0% / 100% auto no-repeat;
+}
+
+.first-screen_container__text-area{
+    border: 2px solid white;
 }

@@ -49,6 +49,24 @@
     transform: scale(1.1);
 }
 
+.menu-head-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:620px) {
+    .menu-head-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0px 30px;
+    }
+}
+
+/* Кнопка мобильного меню */
 .menu-button-container {
     display: flex;
     justify-content: flex-end;
@@ -65,11 +83,25 @@
     transition: .5s all;
 }
 
-.menu-button-container button:hover{
+.menu-button-container button:hover {
     background: #fff;
     color: #000;
 }
 
-.menu-button-container button:active{
+.menu-button-container button:active {
     transform: scale(1.2);
 }
+
+.menu-title-container h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
+
+@media screen and (max-width:500px){
+    .menu-title-container h1 {
+        font-size: 20px;
+    }
+} 
