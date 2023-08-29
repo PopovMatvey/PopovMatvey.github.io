@@ -12,9 +12,12 @@ function App() {
       <div className="main-content">
         <FirstScreen />
         <AboutMeContainer />
-        
+        <Footer /> 
       </div>
-      <Footer />
+      {/* <footer>
+        <span>Copyright © 2023 Попов Матвей. Design by Web</span>
+      </footer> */}
+      {/* <Footer /> */}
     </>
   );
 }

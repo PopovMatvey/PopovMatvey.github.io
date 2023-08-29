@@ -1,6 +1,6 @@
 /* Стили "Обо мне" */
 .about-me-container {
-    background: #CEA576;
+    background: #cea678;
     padding: 20px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 /* Фигура */
-.about-me-container_figure {
+/* .about-me-container_figure {
     position: absolute;
     display: flex;
     align-items: flex-end;
@@ -52,4 +52,4 @@
     position: relative;
     width: 100%;
     height: 140px ;
-}
+} */

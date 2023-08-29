@@ -19,11 +19,11 @@ export function AboutMeContainer() {
                     </span>
                 </div>
             </div>
-            <div className="about-me-container_figure">
+            {/* <div className="about-me-container_figure">
                 <div className="about-me-container_figure_first-help"></div>
                 <div className="about-me-container_figure_second-help"></div>
-            </div>
-            <div className="about-me-container_figure_third-help"></div>
+            </div> */}
+            {/* <div className="about-me-container_figure_third-help"></div> */}
         </>
     )
 }
