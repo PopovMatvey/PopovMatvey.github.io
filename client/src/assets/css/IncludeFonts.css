@@ -31,3 +31,8 @@
     font-family: 'Releway-Light';
     src: url("../fonts/Releway/Raleway-Light.ttf");
 }
+
+@font-face{
+    font-family: 'Releway-bold';
+    src: url("../fonts/Releway/Raleway-Bold.ttf");
+}

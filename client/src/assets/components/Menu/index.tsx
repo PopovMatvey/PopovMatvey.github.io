@@ -7,32 +7,32 @@ export function Menu() {
     const hrefItems = [
         {
             key: 0,
-            href: "",
+            href: "#",
             title: "обо мне",
         },
         {
             key: 1,
-            href: "",
+            href: "#",
             title: "услуги",
         },
         {
             key: 2,
-            href: "",
+            href: "#",
             title: "Портфолио",
         },
         {
             key: 3,
-            href: "",
+            href: "#",
             title: "расчёт стоимости",
         },
         {
             key: 4,
-            href: "",
+            href: "#",
             title: "отзывы",
         },
         {
             key: 5,
-            href: "",
+            href: "#",
             title: "контакты",
         },
     ];
@@ -43,8 +43,6 @@ export function Menu() {
 
     return (
         <>
-
-
             {flagMobileMenuControl ? (
                 <>
                     <div className="menu-head-container">
