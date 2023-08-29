@@ -2,6 +2,7 @@ import React from "react";
 import './css/style.css';
 import firstScreenImage from '../../images/common-background.svg';
 
+// Первый экран
 export function FirstScreen() {
 
     return (

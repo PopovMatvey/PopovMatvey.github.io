@@ -2,8 +2,8 @@ import React from 'react';
 import { Header } from '../Header/index';
 import { Footer } from '../Footer/index';
 import './css/style.css';
-// import { Title } from '../Title';
 import { FirstScreen } from '../FirstScreen';
+import { AboutMeContainer } from '../AboutMe';
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
       <Header />
       <div className="main-content">
         <FirstScreen />
-        {/* <Title title={"erfwe"}/> */}
+        <AboutMeContainer />
+        
       </div>
       <Footer />
     </>
