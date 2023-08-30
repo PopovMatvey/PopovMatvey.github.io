@@ -5,7 +5,9 @@ import { Footer } from '../Footer/index';
 import { FirstScreen } from '../FirstScreen';
 import { AboutMeContainer } from '../AboutMe';
 import { MyTaskContainer } from '../MyTask';
+import { ServicesContainer } from '../Services';
 
+// Приложение
 function App() {
   return (
     <>
@@ -14,6 +16,9 @@ function App() {
         <FirstScreen />
         <AboutMeContainer />
         <MyTaskContainer />
+        <ServicesContainer/>
+
+
         <Footer />
       </div>
     </>
