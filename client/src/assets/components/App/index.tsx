@@ -1,9 +1,10 @@
 import React from 'react';
+import './css/style.css';
 import { Header } from '../Header/index';
 import { Footer } from '../Footer/index';
-import './css/style.css';
 import { FirstScreen } from '../FirstScreen';
 import { AboutMeContainer } from '../AboutMe';
+import { MyTaskContainer } from '../MyTask';
 
 function App() {
   return (
@@ -12,12 +13,9 @@ function App() {
       <div className="main-content">
         <FirstScreen />
         <AboutMeContainer />
-        <Footer /> 
+        <MyTaskContainer />
+        <Footer />
       </div>
-      {/* <footer>
-        <span>Copyright © 2023 Попов Матвей. Design by Web</span>
-      </footer> */}
-      {/* <Footer /> */}
     </>
   );
 }
