@@ -30,39 +30,3 @@
     padding: 20px;
 }
 
-.services-container-assortiment_item {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 250px;
-    background: rgba(241, 241, 241, 0.7);
-    margin: 10px;
-}
-
-.services-container-assortiment_item div {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.services-container-assortiment_item_image img {
-    padding: 10px 0px;
-}
-
-.services-container-assortiment_item_image img {
-    width: 20%;
-}
-
-.services-container-assortiment_item_title h6 {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.services-container-assortiment_item_text {
-    padding: 20px 0px;
-}
-
-.services-container-assortiment_item_text span {
-    font-family: 'Releway-Regular';
-    color: #000;
-}

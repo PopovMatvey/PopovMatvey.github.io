@@ -1,11 +1,36 @@
 import React from "react";
 import "./css/style.css";
-
-import webDesign from './images/services/web-design.svg';
+import { ServiceCardContainer } from "../ServiceCard";
 
 // Услуги
 export function ServicesContainer() {
+    const arrayServices = [
+        {
+            id: 1,
+            titleService: 'Веб дизайн',
+            textService: 'Составляется по вашему желанию в кротчайшие сроки',
+            imageSrc: './images/services/web-design.svg',
+        },
+        {
+            id: 2,
+            titleService: 'Разработка',
+            textService: 'Для вас у меня всегда найдутся решения под ваши нужды',
+            imageSrc: './images/services/development.svg',
+        },
+        {
+            id: 3,
+            titleService: 'CEO-оптимизация',
+            textService: 'Выйду за рамки классического СЕО',
+            imageSrc: './images/services/seo-optimisation.svg',
+        },
+        {
+            id: 4,
+            titleService: 'Маркетинг',
+            textService: 'Увеличу вам продажи  быстро и надежно',
+            imageSrc: './images/services/marketing.svg',
+        },
 
+    ]
 
 
     return (
@@ -14,35 +39,16 @@ export function ServicesContainer() {
                 <h2>Мои услуги</h2>
                 <span>Что я могу Вам предложить</span>
                 <div className="services-container-assortiment">
-
-                    <div className="services-container-assortiment_item">
-                        <div className="services-container-assortiment_item_image">
-                            <img src={webDesign} alt="Карточка услуги" />
-                        </div>
-                        <div className="services-container-assortiment_item_title">
-                            <h6>Веб дизайн</h6>
-                        </div>
-                        <div className="services-container-assortiment_item_text">
-                            <span>
-                                Составляется по вашему желанию в кротчайшие сроки
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="services-container-assortiment_item">
-                        <div className="services-container-assortiment_item_image">
-                            <img src={webDesign} alt="Карточка услуги" />
-                        </div>
-                        <div className="services-container-assortiment_item_title">
-                            <h6>Веб дизайн</h6>
-                        </div>
-                        <div className="services-container-assortiment_item_text">
-                            <span>
-                                Составляется по вашему желанию в кротчайшие сроки
-                            </span>
-                        </div>
-                    </div>
-                    
+                    {
+                        arrayServices.map((element: any, i: any) => (
+                            <ServiceCardContainer
+                                key={i}
+                                titleService={element.titleService}
+                                textService={element.textService}
+                                imageSrc={element.imageSrc}
+                            />
+                        ))
+                    }
                 </div>
             </div>
         </>

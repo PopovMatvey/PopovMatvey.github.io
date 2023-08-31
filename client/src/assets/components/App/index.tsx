@@ -16,7 +16,7 @@ function App() {
         <FirstScreen />
         <AboutMeContainer />
         <MyTaskContainer />
-        <ServicesContainer/>
+        <ServicesContainer />
 
 
         <Footer />
