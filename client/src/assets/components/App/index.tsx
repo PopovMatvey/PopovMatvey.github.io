@@ -7,6 +7,7 @@ import { AboutMeContainer } from '../AboutMe';
 import { MyTaskContainer } from '../MyTask';
 import { ServicesContainer } from '../Services';
 import { PortfolioContainer } from '../Portfolio';
+import { ReviewsContainer } from '../Reviews';
 
 // Приложение
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <MyTaskContainer />
         <ServicesContainer />
         <PortfolioContainer />
+        <ReviewsContainer />
 
         <Footer />
       </div>

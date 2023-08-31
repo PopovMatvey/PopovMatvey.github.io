@@ -1,0 +1,12 @@
+/* Стиль отзывов */
+.reviews-container{
+    padding: 20px;
+    background: #FFCA8B;
+}
+
+.reviews-container_slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

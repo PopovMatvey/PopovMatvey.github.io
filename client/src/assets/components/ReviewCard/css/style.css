@@ -1,0 +1,25 @@
+/* Стили карточки отзыва */
+.review-card {
+    width: 40%;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px 0px 15px;
+    background: #fff;
+    white-space: pre-wrap;
+}
+
+.review-card div{
+    padding: 5px;
+}
+
+.review-card div h6{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.review-card__text span{
+    display: block;
+    text-align: justify;
+    font-size: 16px;
+    margin: 10px 0px;
+}

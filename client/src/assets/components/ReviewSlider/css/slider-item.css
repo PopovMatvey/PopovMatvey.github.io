@@ -1,0 +1,5 @@
+/* Стили пункта слайдера */
+.carousel-item{
+    background: none;
+    width: 100%;
+}

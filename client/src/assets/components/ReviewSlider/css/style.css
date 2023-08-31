@@ -1,0 +1,90 @@
+/* Слайдер */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  min-width: 300px;
+  height: auto;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.carousel-img {
+  width: 180px;
+}
+
+/* Кнопки */
+.carousel-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.button-arrow_container {
+  width: 100%;
+  position: absolute;
+  bottom: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-arrow:first-child {
+  left: 20%;
+}
+
+.button-arrow:last-child {
+  right: 20%;
+}
+
+.button-arrow img {
+  height: 40px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator-buttons {
+  cursor: pointer;
+}
+
+.indicators>button {
+  margin: 5px;
+  background: none;
+}
+
+.indicator-symbol {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #000;
+}
+
+.indicator-symbol-active {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  color: #fff;
+  border: 2px solid #000;
+}
