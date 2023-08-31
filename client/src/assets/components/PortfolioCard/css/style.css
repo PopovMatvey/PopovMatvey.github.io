@@ -1,10 +1,25 @@
 /* Стили карточки портфолио */
-.portfolio-container_assortiment__item{
+.portfolio-container_assortiment__item {
     width: 45%;
     min-width: 270px;
     margin: 10px;
 }
 
-.portfolio-container_assortiment__item img{
+.portfolio-container_assortiment__item a {
+    display: block;
     width: 100%;
+    height: 100%;
+}
+
+.portfolio-container_assortiment__item img {
+    width: 100%;
+    transition: 1s all;
+}
+
+.portfolio-container_assortiment__item img:hover{
+    opacity: 0.7;
+}
+
+.portfolio-container_assortiment__item img:active{
+    transform: scale(1.1);
 }

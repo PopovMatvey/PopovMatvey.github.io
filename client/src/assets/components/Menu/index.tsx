@@ -23,15 +23,10 @@ export function Menu() {
         {
             key: 3,
             href: "#",
-            title: "расчёт стоимости",
-        },
-        {
-            key: 4,
-            href: "#",
             title: "отзывы",
         },
         {
-            key: 5,
+            key: 4,
             href: "#",
             title: "контакты",
         },

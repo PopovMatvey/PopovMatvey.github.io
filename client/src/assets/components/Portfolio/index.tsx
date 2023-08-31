@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/style.css";
 import { Title } from "../Title";
-import { PortfolioCard } from "../PortfolioCard/imdex";
+import { PortfolioCard } from "../PortfolioCard";
 
 // Портфолио
 export function PortfolioContainer() {
@@ -9,13 +9,14 @@ export function PortfolioContainer() {
         {
             id: 0,
             imageSrc: "./images/portfolio/first.svg",
+            href: "https://termobeton.org/",
         },
         {
             id: 1,
-            imageSrc: "./images/portfolio/first.svg",
+            imageSrc: "./images/portfolio/misic-platform.png",
+            href: "http://62.113.107.56:2001/",
         },
     ]
-
 
     return (
         <>
@@ -27,6 +28,7 @@ export function PortfolioContainer() {
                             <PortfolioCard
                                 key={i}
                                 imageSrc={element.imageSrc}
+                                href={element.href}
                             />
                         ))
                     }
