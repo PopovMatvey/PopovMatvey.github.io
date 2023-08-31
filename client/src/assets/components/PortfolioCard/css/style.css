@@ -1,0 +1,10 @@
+/* Стили карточки портфолио */
+.portfolio-container_assortiment__item{
+    width: 45%;
+    min-width: 270px;
+    margin: 10px;
+}
+
+.portfolio-container_assortiment__item img{
+    width: 100%;
+}

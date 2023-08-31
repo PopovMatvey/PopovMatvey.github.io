@@ -1,0 +1,12 @@
+/* Стили портфолио */
+.portfolio-container{
+    width: 100%;
+    padding: 20px;
+}
+
+.portfolio-container_assortiment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

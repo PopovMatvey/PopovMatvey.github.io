@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/style.css";
 import { ServiceCardContainer } from "../ServiceCard";
+import { Title } from "../Title";
 
 // Услуги
 export function ServicesContainer() {
@@ -29,6 +30,24 @@ export function ServicesContainer() {
             textService: 'Увеличу вам продажи  быстро и надежно',
             imageSrc: './images/services/marketing.svg',
         },
+        {
+            id: 5,
+            titleService: '1С-Разработка',
+            textService: 'Создам конфигурацию, основываясь на ваших пожеланиях',
+            // imageSrc: './images/services/marketing.svg',
+        },
+        {
+            id: 6,
+            titleService: 'Сопровождение - IT проектов',
+            textService: 'Доработка, сопровождение проектов различной сложности',
+            // imageSrc: './images/services/marketing.svg',
+        },
+        {
+            id: 7,
+            titleService: 'Разработка приложений на портале Bitrix',
+            textService: 'Всегда поможем с внедрением и адаптацией проекта в Ваш бизнес',
+            // imageSrc: './images/services/marketing.svg',
+        }
 
     ]
 
@@ -36,11 +55,11 @@ export function ServicesContainer() {
     return (
         <>
             <div className="services-container">
-                <h2>Мои услуги</h2>
+                <Title title="Мои услуги" />
                 <span>Что я могу Вам предложить</span>
                 <div className="services-container-assortiment">
                     {
-                        arrayServices.map((element: any, i: any) => (
+                        arrayServices.map((element: any, i: number) => (
                             <ServiceCardContainer
                                 key={i}
                                 titleService={element.titleService}
