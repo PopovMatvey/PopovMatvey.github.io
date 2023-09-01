@@ -1,29 +1,60 @@
 /* Стили "Подвала" */
-footer{
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
     width: 100%;
     padding: 20px 10px;
-    background: #396579;
     color: #fff;
+    background: #000;
+    z-index: 5;
 }
 
-footer h1{
-    font-family: 'BerlinTypeBold';
-    font-size: 30px
-}
-
-.footer-content{
+footer>div {
     width: 100%;
+}
+
+footer h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+@media screen and (max-width:750px) {
+    footer h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    footer h1 {
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+
+.footer-block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 }
 
-.footer-content img{
-    height: 100px;
+.footer-block>div {
+    width: 40%;
 }
 
-footer span{
+@media screen and (max-width:520px) {
+    .footer-block>div {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+footer span {
     font-family: 'Concrete';
     display: block;
     text-align: center;
+    padding: 10px;
 }

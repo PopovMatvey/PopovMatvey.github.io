@@ -1,13 +1,14 @@
 import React from 'react';
 import './css/style.css';
 import { Header } from '../Header/index';
-import { Footer } from '../Footer/index';
 import { FirstScreen } from '../FirstScreen';
 import { AboutMeContainer } from '../AboutMe';
 import { MyTaskContainer } from '../MyTask';
 import { ServicesContainer } from '../Services';
 import { PortfolioContainer } from '../Portfolio';
 import { ReviewsContainer } from '../Reviews';
+import { ContactContainer } from '../Contact';
+import { Footer } from '../Footer';
 
 // Приложение
 function App() {
@@ -21,9 +22,9 @@ function App() {
         <ServicesContainer />
         <PortfolioContainer />
         <ReviewsContainer />
-
-        <Footer />
+        <ContactContainer />
       </div>
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,10 @@
+/* Стили контактов */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    padding: 20px;
+    background: url('../image/backgroundComputer.jpg') 80% 0% / 100% 100% no-repeat;
+    background-color: #FFCA8B;
+    background-attachment: fixed;
+}
