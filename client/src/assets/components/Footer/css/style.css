@@ -52,6 +52,23 @@ footer h1 {
     }
 }
 
+.footer-block_contacts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid white;
+}
+
+.footer-block_contacts a{
+    display: block;
+    height: 100%;
+    width: 50px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
 footer span {
     font-family: 'Concrete';
     display: block;
