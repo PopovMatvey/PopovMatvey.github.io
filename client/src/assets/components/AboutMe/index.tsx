@@ -9,6 +9,9 @@ export function AboutMeContainer() {
         <>
             <div className="about-me-container">
                 <Title title="добро пожаловать" />
+                <div className="about-me-container_image">
+                    <img src="" alt="Моё фото" />
+                </div>
                 <div className="about-me-container_text">
                     <span>
                         Меня зовут Матвей Попов. Я - веб разработчик. Занимаюсь созданием сайтов под ключ любой сложности (от лендинга до интернет-магазинов и порталов).

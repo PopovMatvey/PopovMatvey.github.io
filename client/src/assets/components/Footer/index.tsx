@@ -1,11 +1,16 @@
 import React from "react";
 import "./css/style.css";
 
-// Подвал
+/**
+ * Подвал
+ * @returns Компонент "Подвал"
+ */
 export function Footer() {
-    const arrayContacts = [
+    const arrayContacts: any = [
         {
-            href: "",
+            href: "уц",
+            src: "",
+            alt: "",
         },
     ]
 
@@ -17,8 +22,15 @@ export function Footer() {
                         <h1>Popov Matvey</h1>
                     </div>
                     <div className="footer-block_contacts">
-                        <a href="">s</a>
-                        <a href="">w</a>
+                        {arrayContacts.map((element: any, i: number) => (
+                            // Можно зарефакторить
+                            <>
+                                <a href={element.href} key={i}>
+                                    <img src={element.src} alt={element.alt} />
+                                </a>
+                            </>
+                        ))}
+
                     </div>
                 </div>
                 <div className="footer-signature">

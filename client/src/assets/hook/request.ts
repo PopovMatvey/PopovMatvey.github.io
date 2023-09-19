@@ -1,7 +1,10 @@
-// Request on server
-// url - url request
-// method - http method
-// data - json object (requested object)
+/**
+ * Запрос на сервер
+ * @param parUrl    - url request
+ * @param parMethod - http method
+ * @param parData   - json object (requested object)
+ * @returns Статус запроса (код)
+ */
 export async function request(parUrl: string, parMethod = 'GET', parData = null) {
     try {
         let response: Response;

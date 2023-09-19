@@ -1,6 +1,11 @@
 import React from "react";
 import "./css/style.css";
 
+/**
+ * Карточка отзыва
+ * @param param0 пропс ( объект "Карточка отзыва")
+ * @returns компонент "Карточка отзыва"
+ */
 export function ReviewCard({ item }: any) {
 
     return (
@@ -19,10 +24,6 @@ export function ReviewCard({ item }: any) {
                 <div className="review-card__text">
                     <span>
                         {item.textReview}
-                        {/* Сотрудничаю с Матвеем недавно, но за короткий
-                        срок помог с раскруткой группы. В планах создание
-                        сайта. Понравилось, что учитывает ВСЕ пожелания клиента,
-                        разъясняет кучу непонятных мне моментов, за что отдельное спасибо :) */}
                     </span>
                 </div>
             </div>

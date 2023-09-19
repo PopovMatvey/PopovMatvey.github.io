@@ -2,7 +2,10 @@ import React from "react";
 import './css/style.css';
 import firstScreenImage from '../../images/common-background.svg';
 
-// Первый экран
+/**
+ * Первый экран
+ * @returns Компонент "Первый экран"
+ */
 export function FirstScreen() {
 
     return (
@@ -20,7 +23,7 @@ export function FirstScreen() {
                     </div>
                     <div className="first-screen_container__text-area___text">
                         <span>
-                            От простого к сложному
+                            Я создаю сложное очень просто
                         </span>
                     </div>
                     <div className="first-screen_container__text-area___button">

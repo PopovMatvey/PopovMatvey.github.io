@@ -2,7 +2,10 @@ import React from "react";
 import "./css/style.css";
 import computerSVG from "./image/computer.svg";
 
-// Моя задача
+/**
+ * Моя задача
+ * @returns компонент "Моя задача"
+ */
 export function MyTaskContainer() {
 
     return (

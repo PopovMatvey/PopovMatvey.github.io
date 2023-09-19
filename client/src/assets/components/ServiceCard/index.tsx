@@ -1,7 +1,12 @@
 import React from "react";
 import "./css/style.css";
 
-export function ServiceCardContainer({ imageSrc, titleService, textService }: any) {
+/**
+ * Карточка услуги
+ * @param param0 - пропс (Изображение услуги, заголовок услуги, текст услуги)
+ * @returns компонент "Карточка услуги"
+ */
+export function ServiceCard({ imageSrc, titleService, textService }: any) {
 
     return (
         <>

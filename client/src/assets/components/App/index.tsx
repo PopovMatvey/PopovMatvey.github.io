@@ -10,7 +10,10 @@ import { ReviewsContainer } from '../Reviews';
 import { ContactContainer } from '../Contact';
 import { Footer } from '../Footer';
 
-// Приложение
+/**
+ * Приложение (точка входа)
+ * @returns компонент "Приложение"
+ */
 function App() {
   return (
     <>

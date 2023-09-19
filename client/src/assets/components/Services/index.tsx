@@ -1,9 +1,12 @@
 import React from "react";
 import "./css/style.css";
-import { ServiceCardContainer } from "../ServiceCard";
+import { ServiceCard } from "../ServiceCard";
 import { Title } from "../Title";
 
-// Услуги
+/**
+ * Контейнер услуги
+ * @returns Компонент "Контейнер услуги"
+ */
 export function ServicesContainer() {
     const arrayServices = [
         {
@@ -60,7 +63,7 @@ export function ServicesContainer() {
                 <div className="services-container-assortiment">
                     {
                         arrayServices.map((element: any, i: number) => (
-                            <ServiceCardContainer
+                            <ServiceCard
                                 key={i}
                                 titleService={element.titleService}
                                 textService={element.textService}

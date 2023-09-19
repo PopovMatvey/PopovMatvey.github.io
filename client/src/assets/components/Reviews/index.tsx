@@ -3,6 +3,10 @@ import './css/style.css';
 import { Title } from '../Title';
 import { ReviewSlider } from '../ReviewSlider';
 
+/**
+ * Контейнер с отзывами
+ * @returns компонент "Контейнер с отзывами"
+ */
 export function ReviewsContainer() {
     const arrayReviews = [
         {

@@ -3,8 +3,13 @@ import "./css/style.css";
 import { Title } from "../Title";
 import { PortfolioCard } from "../PortfolioCard";
 
-// Портфолио
+/**
+ * Портфолио
+ * @returns компонент "Портфолио"
+ */
 export function PortfolioContainer() {
+    /* Varibles */
+    // Портфолио ()
     const arrayPortfolio = [
         {
             id: 0,

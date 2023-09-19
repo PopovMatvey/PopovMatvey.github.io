@@ -7,6 +7,13 @@
     padding: 20px;
 }
 
+.about-me-container_image img {
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
 /* Текст "Обо мне" */
 .about-me-container_text {
     text-align: justify;

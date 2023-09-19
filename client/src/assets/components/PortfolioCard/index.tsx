@@ -1,6 +1,11 @@
 import React from "react";
 import './css/style.css';
 
+/**
+ * Карточка портфолио
+ * @param param0 - пропс (id-карточки, изображение каточки, ссылка карточки)
+ * @returns компонент "Карточка портфолио"
+ */
 export function PortfolioCard({ id, imageSrc, href }: any) {
 
     return (

@@ -1,10 +1,11 @@
 import React from "react";
 import "./css/style.css";
-import contactBackground from "./image/contactBackgroung.svg";
-import { Footer } from "../Footer";
 import { MessageForm } from "../MessageForm";
 
-// Контакты
+/**
+ * Контакты
+ * @returns Компонент "Контакты" 
+ */
 export function ContactContainer() {
 
     return (

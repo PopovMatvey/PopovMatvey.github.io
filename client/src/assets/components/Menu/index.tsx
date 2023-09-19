@@ -1,9 +1,17 @@
 import React, { useState } from "react"
 import "./css/style.css"
 
+/**
+ * Меню
+ * @returns Компонент "Меню" 
+ */
 export function Menu() {
-    const [flagMobileMenuControl, setFlagMobileMenuControl] = useState(true);
-    const titleString = "Popov matvey"
+    /* States  */
+    const [flagMobileMenuControl, setFlagMobileMenuControl] = useState(true);   // Флаг контролья мобильного меню
+
+    /* Const varibles */
+    const titleString = "Popov matvey" //   Заголовок менб
+    // Ссылки
     const hrefItems = [
         {
             key: 0,
@@ -32,6 +40,9 @@ export function Menu() {
         },
     ];
 
+    /**
+     * Обработчик изменения контроля мобильного меню
+     */
     const hendlerMobileNemuControlButton = () => {
         setFlagMobileMenuControl(!flagMobileMenuControl);
     }
