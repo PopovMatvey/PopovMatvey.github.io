@@ -8,8 +8,7 @@
 }
 
 .about-me-container_image img {
-    height: 30%;
-    width: 30%;
+    height: 150px;
     border-radius: 50%;
     border: 1px solid #000;
 }
@@ -26,6 +25,7 @@
     text-align: center;
     font-size: 16px;
     padding: 5px 0px;
+    line-height: 20px;
 }
 
 @media screen and (max-width:500px) {

@@ -1,6 +1,7 @@
 import React from "react";
 import './css/style.css';
 import { Title } from "../Title";
+import avatar from './image/ava_Arbat_Moscow.jpg';
 
 // Обо мне
 export function AboutMeContainer() {
@@ -10,7 +11,7 @@ export function AboutMeContainer() {
             <div className="about-me-container">
                 <Title title="добро пожаловать" />
                 <div className="about-me-container_image">
-                    <img src="" alt="Моё фото" />
+                    <img src={avatar} alt="Моё фото" />
                 </div>
                 <div className="about-me-container_text">
                     <span>

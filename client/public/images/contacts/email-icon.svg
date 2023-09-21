@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="400" height="400" viewBox="0 0 400 400" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.2</desc>
+<defs>
+</defs>
+<g transform="matrix(6.25 0 0 6.25 200 218.75)" id="mail_email_e-mail_letter"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(256,256,256); fill-rule: nonzero; opacity: 1;"  transform=" translate(-16, -19)" d="M 28 13 a 1 1 0 0 0 -1 1 v 8 a 1 1 0 0 1 -1 1 H 6 a 1 1 0 0 1 -1 -1 V 14 a 1 1 0 0 0 -2 0 v 8 a 3 3 0 0 0 0.88 2.12 A 3 3 0 0 0 6 25 H 26 a 3 3 0 0 0 2.12 -0.88 A 3 3 0 0 0 29 22 V 14 A 1 1 0 0 0 28 13 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(6.25 0 0 6.25 200 181.25)" id="mail_email_e-mail_letter"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(256,256,256); fill-rule: nonzero; opacity: 1;"  transform=" translate(-16, -13)" d="M 15.4 18.8 a 1 1 0 0 0 1.2 0 L 28.41 9.94 a 1 1 0 0 0 0.3 -1.23 a 3.06 3.06 0 0 0 -0.59 -0.83 A 3 3 0 0 0 26 7 H 6 a 3 3 0 0 0 -2.12 0.88 a 3.06 3.06 0 0 0 -0.59 0.83 a 1 1 0 0 0 0.3 1.23 Z M 6 9 H 26 a 0.9 0.9 0 0 1 0.28 0 L 16 16.75 L 5.72 9 A 0.9 0.9 0 0 1 6 9 Z" stroke-linecap="round" />
+</g>
+</svg>
