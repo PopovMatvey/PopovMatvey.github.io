@@ -6,11 +6,24 @@ import "./css/style.css";
  * @param param0 - пропс (Изображение услуги, заголовок услуги, текст услуги)
  * @returns компонент "Карточка услуги"
  */
-export function ServiceCard({ imageSrc, titleService, textService }: any) {
+export function ServiceCard({ imageSrc, titleService, textService, textMessage }: any) {
+
+    /**
+     * Обработчик назатия на it-услугу
+     */
+    const handlerServiceContaineritemOnClick = (event: any) => {
+        console.log(textMessage);
+        event.preventDefault();
+
+        document.getElementById('contacts')?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
 
     return (
         <>
-            <div className="services-container-assortiment_item" >
+            <div className="services-container-assortiment_item" onClick={handlerServiceContaineritemOnClick}>
                 <div className="services-container-assortiment_item_image">
                     <img src={imageSrc} alt="Карточка услуги" />
                 </div>

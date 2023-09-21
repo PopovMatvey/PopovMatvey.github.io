@@ -46,7 +46,7 @@ export function Menu() {
      * @returns id якорного блока
      */
     function getIdTargetBlock(parEvent: any) {
-        return parEvent.substr(23)
+        return parEvent.substr(23);
     }
 
     /**
