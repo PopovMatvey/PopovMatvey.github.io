@@ -14,14 +14,24 @@ export function PortfolioContainer() {
         {
             id: 0,
             imageSrc: "./images/portfolio/first.svg",
-            href: "https://termobeton.org/",
+            href: "http://62.113.107.56:2000/",
         },
         {
             id: 1,
             imageSrc: "./images/portfolio/misic-platform.png",
             href: "http://62.113.107.56:2001/",
         },
-    ]
+        {
+            id: 2,
+            imageSrc: "./images/portfolio/best-chrome.png",
+            href: "http://62.113.107.56:2002/",
+        },
+        {
+            id: 3,
+            imageSrc: "./images/portfolio/qr-app.png",
+            href: "http://62.113.107.56:2003/",
+        },
+    ];
 
     return (
         <>

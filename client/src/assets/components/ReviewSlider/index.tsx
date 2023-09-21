@@ -12,9 +12,9 @@ export const ReviewSlider = ({ items }: any) => {
   // Обновить индекс
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) {
-      newIndex = 0;
-    } else if (newIndex >= items.length) {
       newIndex = items.length - 1;
+    } else if (newIndex >= items.length) {
+      newIndex = 0;
     }
 
     setActiveIndex(newIndex);
