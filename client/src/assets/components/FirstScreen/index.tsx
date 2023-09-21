@@ -30,6 +30,7 @@ export function FirstScreen() {
                         <a href="#ывыв">Узнать больше</a>
                     </div>
                 </div>
+                <div id="about-me"></div>
             </div>
         </>
     )

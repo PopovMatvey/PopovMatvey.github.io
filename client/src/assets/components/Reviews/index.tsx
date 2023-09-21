@@ -41,6 +41,7 @@ export function ReviewsContainer() {
                 <div className="reviews-container_slider">
                     <ReviewSlider items={arrayReviews} />
                 </div>
+                <div id="contacts"></div>
             </div>
         </>
     )

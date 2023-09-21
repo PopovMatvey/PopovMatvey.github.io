@@ -111,3 +111,9 @@
         padding: 7px 30px;
     }
 }
+
+/* Якорная ссылка */
+#about-me {
+    position: absolute;
+    bottom: 130px;
+}

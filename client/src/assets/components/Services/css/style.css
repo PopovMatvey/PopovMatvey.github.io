@@ -1,5 +1,6 @@
 /* Стили услуг */
 .services-container {
+    position: relative;
     padding: 20px;
     background: #FFCA8B;
 }
@@ -30,3 +31,8 @@
     padding: 20px;
 }
 
+/* Якорная ссылка */
+#portfolio {
+    position: absolute;
+    bottom: 130px;
+}

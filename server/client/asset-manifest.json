@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0332ceb7.css",
+    "main.js": "/static/js/main.c616057d.js",
+    "static/js/787.212e40a4.chunk.js": "/static/js/787.212e40a4.chunk.js",
+    "static/media/common-background.svg": "/static/media/common-background.a2ada7e1dbbe20f24d36efd4cd4faa38.svg",
+    "static/media/computer.svg": "/static/media/computer.36f4889ec2df2bb1629aa0ef26836753.svg",
+    "static/media/BerlinType-Bold.otf": "/static/media/BerlinType-Bold.9dab94178b1737b870ba.otf",
+    "static/media/BerlinType-Regular.otf": "/static/media/BerlinType-Regular.1bbba4deb8775ccac9dc.otf",
+    "static/media/backgroundComputer.jpg": "/static/media/backgroundComputer.c6143586c954cea8f053.jpg",
+    "static/media/Raleway-Light.ttf": "/static/media/Raleway-Light.f86090a73e4996cf067e.ttf",
+    "static/media/Raleway-Regular.ttf": "/static/media/Raleway-Regular.cedc82ec9fbfca66222a.ttf",
+    "static/media/Raleway-Bold.ttf": "/static/media/Raleway-Bold.b430856ea5fc5c516851.ttf",
+    "static/media/framd.otf": "/static/media/framd.953badef5157dd688816.otf",
+    "static/media/arrow-back.png": "/static/media/arrow-back.7bfeaed9a467ec62f687.png",
+    "static/media/arrow-next.png": "/static/media/arrow-next.65143e3128d4ac816914.png",
+    "static/media/Concrete-Regular.otf": "/static/media/Concrete-Regular.fcb1090140aa5427f444.otf",
+    "index.html": "/index.html",
+    "main.0332ceb7.css.map": "/static/css/main.0332ceb7.css.map",
+    "main.c616057d.js.map": "/static/js/main.c616057d.js.map",
+    "787.212e40a4.chunk.js.map": "/static/js/787.212e40a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0332ceb7.css",
+    "static/js/main.c616057d.js"
+  ]
+}

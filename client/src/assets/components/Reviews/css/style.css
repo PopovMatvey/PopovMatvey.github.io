@@ -1,5 +1,6 @@
 /* Стиль отзывов */
 .reviews-container{
+    position: relative;
     padding: 20px;
     background: #FFCA8B;
 }
@@ -9,4 +10,10 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+
+/* Якорная ссылка */
+#contacts {
+    position: absolute;
+    bottom: 70px;
 }

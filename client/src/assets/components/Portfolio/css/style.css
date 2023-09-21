@@ -1,5 +1,6 @@
 /* Стили портфолио */
 .portfolio-container{
+    position: relative;
     width: 100%;
     padding: 20px;
 }
@@ -9,4 +10,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+/* Якорная ссылка */
+#reviews {
+    position: absolute;
+    bottom: 130px;
 }

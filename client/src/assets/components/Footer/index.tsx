@@ -24,11 +24,9 @@ export function Footer() {
                     <div className="footer-block_contacts">
                         {arrayContacts.map((element: any, i: number) => (
                             // Можно зарефакторить
-                            <>
-                                <a href={element.href} key={i}>
-                                    <img src={element.src} alt={element.alt} />
-                                </a>
-                            </>
+                            <a href={element.href} key={i}>
+                                <img src={element.src} alt={element.alt} />
+                            </a>
                         ))}
 
                     </div>

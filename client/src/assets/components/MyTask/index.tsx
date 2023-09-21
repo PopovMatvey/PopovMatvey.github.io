@@ -33,6 +33,7 @@ export function MyTaskContainer() {
                 <div className="my-task-container_image">
                     <img src={computerSVG} alt="компьютер" />
                 </div>
+                <div id="services"></div>
             </div>
         </>
     )

@@ -15,36 +15,60 @@ export function Menu() {
     const hrefItems = [
         {
             key: 0,
-            href: "#",
+            href: "#about-me",
             title: "обо мне",
         },
         {
             key: 1,
-            href: "#",
+            href: "#services",
             title: "услуги",
         },
         {
             key: 2,
-            href: "#",
+            href: "#portfolio",
             title: "Портфолио",
         },
         {
             key: 3,
-            href: "#",
+            href: "#reviews",
             title: "отзывы",
         },
         {
             key: 4,
-            href: "#",
+            href: "#contacts",
             title: "контакты",
         },
     ];
+
+    /**
+     * Получить id якорного блока
+     * @param parEvent - объект "Событие"
+     * @returns id якорного блока
+     */
+    function getIdTargetBlock(parEvent: any) {
+        return parEvent.substr(23)
+    }
 
     /**
      * Обработчик изменения контроля мобильного меню
      */
     const hendlerMobileNemuControlButton = () => {
         setFlagMobileMenuControl(!flagMobileMenuControl);
+    }
+
+    /**
+     * Обработчие нажатия на пункт меню
+     * @param event - объект "Событие"
+     */
+    const handlerMenuItemOnClick = (event: any) => {
+        const idTargetBlock = getIdTargetBlock(event.target.href);
+
+        event.preventDefault();
+
+        document.getElementById(idTargetBlock)?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
     }
 
     return (
@@ -63,7 +87,13 @@ export function Menu() {
                         {
                             hrefItems.map((element: any) =>
                                 <div className="menu-container_item" key={element.key}>
-                                    <a href={element.href} key={element.key}>{element.title}</a>
+                                    <a
+                                        href={element.href}
+                                        key={element.key}
+                                        onClick={handlerMenuItemOnClick}
+                                    >
+                                        {element.title}
+                                    </a>
                                 </div>
                             )
                         }
