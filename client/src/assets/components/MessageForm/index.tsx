@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./css/style.css";
+// import { useSendEmailMessage } from "./hook/useSendEmailMessage";
+import { request } from "../../hook/request";
 
 /**
  * Форма связи
@@ -10,17 +12,73 @@ export function MessageForm() {
     const [nameInput, setNameInput] = useState('');
     const [emailInput, setEmailInput] = useState('');
     const [messageTextArea, setMessageTextArea] = useState('');
+    const [requestMailObject, setRequestMailObject] = useState({});
+    // const [responseMailObject, setResponseMailObject] = useState();
+    /* Hooks */
+    // const { sendMessageToMail } = useSendEmailMessage(requestMailObject);
     // const 
     const phoneNumberString = "+7-(915)-627-38-29";         // Телефон
     const emailString = "popov.matvey.s62@gmail.com";       // Почта
 
     /**
+     * Получить запросный объект почты
+     * @returns запросный объект почты
+     */
+    function getRequestMailObject() {
+        return {
+            name: nameInput,
+            email: emailInput,
+            message: messageTextArea,
+        }
+    }
+
+    /**
+     * Получить объект валидности
+     * @returns объект валидности
+     */
+    function getObjectValid() {
+        if (nameInput === '') {
+            return {
+                validState: false,
+                textMessage: "Не введено имя",
+            };
+        }
+
+        if (emailInput === '') {
+            return {
+                validState: false,
+                textMessage: "Не введена почта",
+            };
+        }
+
+        return {
+            validState: true,
+            textMessage: "",
+        }
+    }
+
+    /**
      * Обработчик формы связи
      * @param event - объект выполненного события
      */
-    const handlerOnSubmitMessageForm = (event: any) => {
+    const handlerOnSubmitMessageForm = async (event: any) => {
+        const validObject = getObjectValid();
+        const requestMailObjectVarible = getRequestMailObject();
+
         event.preventDefault();
-        console.log("sucsesfull");
+        setRequestMailObject(requestMailObjectVarible);
+
+        if (validObject.validState) {
+            let responseObject = await request('/api/mail', 'POST', requestMailObject);
+
+            if(responseObject?.status === 200){
+                console.log("Всё отправлено успешно");
+            } else {
+                console.log("Сервер сейчас недоступен");
+            }
+        } else {
+            console.log(validObject.textMessage);
+        }
     }
 
     /**

@@ -37,7 +37,7 @@ export function Footer() {
             src: "./images/contacts/git-icon.svg",
             alt: "иконка git",
         },
-    ]
+    ];
 
     return (
         <>

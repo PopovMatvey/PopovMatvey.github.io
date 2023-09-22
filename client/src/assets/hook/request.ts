@@ -5,9 +5,9 @@
  * @param parData   - json object (requested object)
  * @returns Статус запроса (код)
  */
-export async function request(parUrl: string, parMethod = 'GET', parData = null) {
+export async function request(parUrl: string, parMethod = 'GET', parData = {}) {
     try {
-        let response: Response;
+        // let response: Response;
         const httpObject: RequestInit = {
             method: parMethod, // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
@@ -22,9 +22,7 @@ export async function request(parUrl: string, parMethod = 'GET', parData = null)
             body: JSON.stringify(parData), // body data type must match "Content-Type" header
         }
 
-        response = await fetch(parUrl, httpObject);
-
-        return await response.status;
+        return (await fetch(parUrl, httpObject));    // response.status;
     } catch (e: any) {
         console.warn("Error:", e.message);
     }

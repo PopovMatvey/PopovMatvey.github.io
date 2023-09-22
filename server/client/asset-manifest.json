@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0332ceb7.css",
-    "main.js": "/static/js/main.c616057d.js",
+    "main.css": "/static/css/main.1808016a.css",
+    "main.js": "/static/js/main.37ef47eb.js",
     "static/js/787.212e40a4.chunk.js": "/static/js/787.212e40a4.chunk.js",
     "static/media/common-background.svg": "/static/media/common-background.a2ada7e1dbbe20f24d36efd4cd4faa38.svg",
     "static/media/computer.svg": "/static/media/computer.36f4889ec2df2bb1629aa0ef26836753.svg",
@@ -14,14 +14,15 @@
     "static/media/framd.otf": "/static/media/framd.953badef5157dd688816.otf",
     "static/media/arrow-back.png": "/static/media/arrow-back.7bfeaed9a467ec62f687.png",
     "static/media/arrow-next.png": "/static/media/arrow-next.65143e3128d4ac816914.png",
+    "static/media/ava_Arbat_Moscow.jpg": "/static/media/ava_Arbat_Moscow.bab5c5433c139fd8c204.jpg",
     "static/media/Concrete-Regular.otf": "/static/media/Concrete-Regular.fcb1090140aa5427f444.otf",
     "index.html": "/index.html",
-    "main.0332ceb7.css.map": "/static/css/main.0332ceb7.css.map",
-    "main.c616057d.js.map": "/static/js/main.c616057d.js.map",
+    "main.1808016a.css.map": "/static/css/main.1808016a.css.map",
+    "main.37ef47eb.js.map": "/static/js/main.37ef47eb.js.map",
     "787.212e40a4.chunk.js.map": "/static/js/787.212e40a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0332ceb7.css",
-    "static/js/main.c616057d.js"
+    "static/css/main.1808016a.css",
+    "static/js/main.37ef47eb.js"
   ]
 }
