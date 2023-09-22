@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./css/style.css"
-
+import gamburger from '../../images/gamburger.svg'
+import cross from '../../images/cross.svg'
 /**
  * Меню
  * @returns Компонент "Меню" 
@@ -80,7 +81,10 @@ export function Menu() {
                             <h1>{titleString}</h1>
                         </div>
                         <div className="menu-button-container">
-                            <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>{">"}</button>
+                            <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>
+                                {/* {">"} */}
+                                <img src={cross} alt="" />
+                                </button>
                         </div>
                     </div>
                     <div className="menu-container">
@@ -106,7 +110,10 @@ export function Menu() {
                             <h1>{titleString}</h1>
                         </div>
                         <div className="menu-button-container">
-                            <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>{"="}</button>
+                            <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>
+                                {/* {"="} */}
+                                <img src={gamburger} alt="" />
+                                </button>
                         </div>
                     </div>
                 </>

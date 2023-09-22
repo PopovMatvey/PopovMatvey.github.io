@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./css/style.css";
-// import { useSendEmailMessage } from "./hook/useSendEmailMessage";
+import "./css/modalNotification.css";
 import { request } from "../../hook/request";
+import { useNotificationWindowState } from "./hook/notificationWindowState";
 
 /**
  * Форма связи
@@ -13,12 +14,34 @@ export function MessageForm() {
     const [emailInput, setEmailInput] = useState('');
     const [messageTextArea, setMessageTextArea] = useState('');
     const [requestMailObject, setRequestMailObject] = useState({});
-    // const [responseMailObject, setResponseMailObject] = useState();
     /* Hooks */
-    // const { sendMessageToMail } = useSendEmailMessage(requestMailObject);
+    const {
+        titleText, setTitleText,
+        bodyText, setBodyText,
+        modalWindowState, setModalWindowState,
+    } = useNotificationWindowState();   // Состояния модального окна
     // const 
     const phoneNumberString = "+7-(915)-627-38-29";         // Телефон
     const emailString = "popov.matvey.s62@gmail.com";       // Почта
+    // Сообщения для модального окна
+    const warningMassageTitle = "Внимание";
+    const accessfulMessageTitle = "Успех";
+    const accessfulMessage = "Всё отправлено успешно";
+    const warningMassage = "Сервер сейчас недоступен, повторите позже";
+    const urlRequestSendMail = "/api/mail";
+    const methodRequestSendMail = "POST";
+
+    /**
+     * Получить модальное окно
+     * @param parTitleText - Заголовок модального окна
+     * @param parBodyText - Текст сообщения модального окна
+     * @param parModalWindowState - Состояние видимости модального окна
+     */
+    function getModalWindow(parTitleText: string, parBodyText: string, parModalWindowState: boolean) {
+        setTitleText(parTitleText);
+        setBodyText(parBodyText);
+        setModalWindowState(parModalWindowState);
+    }
 
     /**
      * Получить запросный объект почты
@@ -69,15 +92,15 @@ export function MessageForm() {
         setRequestMailObject(requestMailObjectVarible);
 
         if (validObject.validState) {
-            let responseObject = await request('/api/mail', 'POST', requestMailObject);
+            let responseObject = await request(urlRequestSendMail, methodRequestSendMail, requestMailObject);
 
-            if(responseObject?.status === 200){
-                console.log("Всё отправлено успешно");
+            if (responseObject?.status === 200) {
+                getModalWindow(accessfulMessageTitle, accessfulMessage, true);
             } else {
-                console.log("Сервер сейчас недоступен");
+                getModalWindow(warningMassageTitle, warningMassage, true);
             }
         } else {
-            console.log(validObject.textMessage);
+            getModalWindow(warningMassageTitle, validObject.textMessage, true);
         }
     }
 
@@ -152,6 +175,26 @@ export function MessageForm() {
                     </div>
                 </form>
             </div>
+            {/* Модальное окно */
+                <>
+                    {modalWindowState &&
+                        < div id="modalWindow" >
+                            <div className="body-modal-notification" onClick={() => {
+                                setModalWindowState(false);
+                            }} />
+                            <div className="modal-notification">
+                                <button onClick={() => {
+                                    setModalWindowState(false);
+                                }}>X</button>
+                                <div className="modal-notification_content">
+                                    <h1>{titleText}</h1>
+                                    <span>{bodyText}</span>
+                                </div>
+                            </div>
+                        </div >
+                    }
+                </>
+            }
         </>
     )
 }

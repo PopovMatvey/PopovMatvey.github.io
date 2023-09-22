@@ -1,0 +1,68 @@
+.body-modal-notification {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.modal-notification {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    width: 30%;
+    min-width: 180px;
+    height: auto;
+    background: #FFCA8B;
+    padding: 20px;
+    z-index: 11;
+}
+
+.modal-notification_content {
+    width: 100%;
+    height: auto;
+}
+
+.modal-notification h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-notification span {
+    display: block;
+    padding: 10px 10px;
+}
+
+.modal-notification button {
+    font-size: 20px;
+    background: none;
+    transition: .5s all;
+}
+
+.modal-notification button:hover{
+    color: #999;
+}
+
+.modal-notification button:active{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width:500px) {
+    .modal-notification {
+        width: 170px;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .modal-notification {
+        width: 170px;
+        left: 25%;
+    }
+}
