@@ -17,20 +17,19 @@ app.use(cors());
 /*Requests*/
 //GET
 app.get(`${urlRequest}`, (request, response) => {
-    return {
-        status: "ok",
-    };
+    response.status(200).json({ status: 200 });
 });
 
 //POST
 app.post(`${urlRequest}`, (request, response) => {
+    console.log(request.body);
     /*Mail varible*/
-    const serviseMail = 'gmail';                            // Servise mail
-    const mailFromSent = process.env.EMAIL;                 // Sent mail
-    const mailToSent = process.env.EMAIL_TO_SEND;           // Got mail
-    const nameRequest = request.body.name;                  // Deserelize object (name)
-    const emailRequest = request.body.email;                // Deserelize object (email)
-    const shortMessageRequest = request.body.message;       // Deserelize object (short message)
+    const serviseMail = 'gmail';                                // Servise mail
+    const mailFromSent = process.env.EMAIL;                     // Sent mail
+    const mailToSent = process.env.EMAIL_TO_SEND;               // Got mail
+    const nameRequest = request.body.nameUser;                  // Deserelize object (name)
+    const emailRequest = request.body.emailUser;                // Deserelize object (email)
+    const shortMessageRequest = request.body.messageUser;       // Deserelize object (short message)
     // Send message
     const subjectLetter = `Письмо с сайта-визитки`;                                  // Subject letter
     const textLetter = `Приветствую, я ${nameRequest}. Адрес моей электронной почты: ${emailRequest}. ${shortMessageRequest}`;    // Text letter
@@ -58,12 +57,10 @@ app.post(`${urlRequest}`, (request, response) => {
                 console.log(error);
             } else {
                 console.log('Message has been sent');
-                response.status(200).json({ status: 200 });
+                response.status(200).json({ body: request.body });
             }
         }
     );
-
-
 });
 
 //DELETE

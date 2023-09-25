@@ -22,6 +22,7 @@ export function AboutMeContainer() {
                         Если вы ищете талантливого, молодого, перспективного разработчика, имеющего огромное желание развиваться в IT-сфере, вам следует обратиться ко мне.
                     </span>
                 </div>
+                <div id="know-more"></div>
             </div>
             {/* <div className="about-me-container_figure">
                 <div className="about-me-container_figure_first-help"></div>

@@ -8,6 +8,19 @@ import computerSVG from "./image/computer.svg";
  */
 export function MyTaskContainer() {
 
+    /**
+     * Обработчк на клик ссылки "Моё портфолио"
+     * @param event - объект "Событие"
+     */
+    const handlerMyPortfolioOnClick = (event: any) => {
+        event.preventDefault();
+
+        document.getElementById('portfolio')?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+
     return (
         <>
             <div className="my-task-container">
@@ -25,7 +38,7 @@ export function MyTaskContainer() {
                             </span>
                         </div>
                         <div className="my-task-container_text__button">
-                            <a href="#32">Мои работы</a>
+                            <a href="#portfolio" onClick={handlerMyPortfolioOnClick} >Мои работы</a>
                         </div>
 
                     </div>

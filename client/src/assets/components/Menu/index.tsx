@@ -82,9 +82,8 @@ export function Menu() {
                         </div>
                         <div className="menu-button-container">
                             <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>
-                                {/* {">"} */}
                                 <img src={cross} alt="" />
-                                </button>
+                            </button>
                         </div>
                     </div>
                     <div className="menu-container">
@@ -111,9 +110,8 @@ export function Menu() {
                         </div>
                         <div className="menu-button-container">
                             <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>
-                                {/* {"="} */}
                                 <img src={gamburger} alt="" />
-                                </button>
+                            </button>
                         </div>
                     </div>
                 </>

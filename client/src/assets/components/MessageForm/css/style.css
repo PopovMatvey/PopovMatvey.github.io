@@ -179,3 +179,8 @@
 .contact-container_form__submit-button :active {
     transform: scale(1.1);
 }
+
+.disable-submit-button{
+    pointer-events: none;
+    opacity: 0.5;
+}

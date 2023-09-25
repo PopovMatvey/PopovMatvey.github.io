@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import "./css/style.css";
 import "./css/modalNotification.css";
 import { request } from "../../hook/request";
@@ -13,16 +13,19 @@ export function MessageForm() {
     const [nameInput, setNameInput] = useState('');
     const [emailInput, setEmailInput] = useState('');
     const [messageTextArea, setMessageTextArea] = useState('');
-    const [requestMailObject, setRequestMailObject] = useState({});
+
     /* Hooks */
     const {
         titleText, setTitleText,
         bodyText, setBodyText,
         modalWindowState, setModalWindowState,
-    } = useNotificationWindowState();   // Состояния модального окна
-    // const 
+    } = useNotificationWindowState();                       // Состояния модального окна
+
+    /* Constants */
     const phoneNumberString = "+7-(915)-627-38-29";         // Телефон
     const emailString = "popov.matvey.s62@gmail.com";       // Почта
+    const submitInput: Element | null = document.querySelector("#submitInput");     // Кнопка отправки данных с формы
+    
     // Сообщения для модального окна
     const warningMassageTitle = "Внимание";
     const accessfulMessageTitle = "Успех";
@@ -41,18 +44,6 @@ export function MessageForm() {
         setTitleText(parTitleText);
         setBodyText(parBodyText);
         setModalWindowState(parModalWindowState);
-    }
-
-    /**
-     * Получить запросный объект почты
-     * @returns запросный объект почты
-     */
-    function getRequestMailObject() {
-        return {
-            name: nameInput,
-            email: emailInput,
-            message: messageTextArea,
-        }
     }
 
     /**
@@ -81,27 +72,43 @@ export function MessageForm() {
     }
 
     /**
+     * Обнулить все поля
+     */
+    function resetFields() {
+        setNameInput("");
+        setEmailInput("");
+        setMessageTextArea("");
+    }
+
+    /**
      * Обработчик формы связи
      * @param event - объект выполненного события
      */
     const handlerOnSubmitMessageForm = async (event: any) => {
         const validObject = getObjectValid();
-        const requestMailObjectVarible = getRequestMailObject();
+        const requestMailObjectVarible = {
+            nameUser: nameInput,
+            emailUser: emailInput,
+            messageUser: messageTextArea,
+        };
 
         event.preventDefault();
-        setRequestMailObject(requestMailObjectVarible);
 
-        if (validObject.validState) {
-            let responseObject = await request(urlRequestSendMail, methodRequestSendMail, requestMailObject);
+        if (validObject.validState && JSON.stringify(requestMailObjectVarible) !== JSON.stringify({})) {
+            submitInput?.classList.add('disable-submit-button');
+            let responseObject = await request(urlRequestSendMail, methodRequestSendMail, requestMailObjectVarible);
 
-            if (responseObject?.status === 200) {
+            if (responseObject?.responseStatus === 200) {
                 getModalWindow(accessfulMessageTitle, accessfulMessage, true);
+                resetFields();
             } else {
                 getModalWindow(warningMassageTitle, warningMassage, true);
             }
         } else {
             getModalWindow(warningMassageTitle, validObject.textMessage, true);
         }
+
+        submitInput?.classList.remove('disable-submit-button');
     }
 
     /**
@@ -154,12 +161,14 @@ export function MessageForm() {
                             type="text"
                             placeholder="Имя"
                             value={nameInput}
-                            onChange={handlerNameInput} />
+                            onChange={handlerNameInput}
+                        />
                         <input
                             type="email"
                             placeholder="Email"
                             value={emailInput}
-                            onChange={handlerEmailInput} />
+                            onChange={handlerEmailInput}
+                        />
                     </div>
                     <div className="contact-container_form__row">
                         <textarea
@@ -171,7 +180,7 @@ export function MessageForm() {
                         </textarea>
                     </div>
                     <div className="contact-container_form__submit-button">
-                        <input type="submit" value={"Отправить"} />
+                        <input type="submit" id="submitInput" value={"Отправить"} />
                     </div>
                 </form>
             </div>
