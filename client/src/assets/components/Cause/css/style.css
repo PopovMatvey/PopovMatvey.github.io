@@ -1,0 +1,6 @@
+/* Стили блока "Зачем Вам это" */
+.cause-container{
+    position: relative;
+    width: 100%;
+    border: 2px solid black;
+}

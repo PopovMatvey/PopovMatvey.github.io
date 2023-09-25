@@ -9,6 +9,7 @@ import { PortfolioContainer } from '../Portfolio';
 import { ReviewsContainer } from '../Reviews';
 import { ContactContainer } from '../Contact';
 import { Footer } from '../Footer';
+import { CauseContainer } from '../Cause';
 
 /**
  * Приложение (точка входа)
@@ -23,6 +24,7 @@ function App() {
         <AboutMeContainer />
         <MyTaskContainer />
         <ServicesContainer />
+        {/* <CauseContainer/> */}
         <PortfolioContainer />
         <ReviewsContainer />
         <ContactContainer />

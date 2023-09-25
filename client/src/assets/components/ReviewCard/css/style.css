@@ -7,19 +7,41 @@
     margin: 30px 0px 15px;
     background: #fff;
     white-space: pre-wrap;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
-.review-card div{
+.review-card_title-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-card_title-block_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review-card_title-block_row img{
+    width: 50px;
+    height: auto;
+}
+
+.review-card div {
     padding: 5px;
 }
 
-.review-card div h6{
+.review-card div h5 {
     font-size: 20px;
     font-weight: bold;
 }
 
-.review-card__text span{
+.review-card div h6 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.review-card__text span {
     display: block;
     text-align: justify;
     font-size: 16px;
