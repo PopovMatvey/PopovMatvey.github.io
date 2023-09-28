@@ -8,6 +8,19 @@
     width: 100%;
     min-width: 300px;
     z-index: 1;
+    /* opacity: 0; */
+    /* animation: 3s linear 1s alternate appearance; */
+}
+
+@keyframes appearance {
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Фон основного экрана */
