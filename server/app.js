@@ -75,12 +75,12 @@ app.put(`${urlRequest}/:id`, (request, response) => {
 
 /*Directory*/
 // init statics
-app.use(express.static(path.resolve(__dirname, '../client/build')));
+app.use(express.static(path.resolve(__dirname, '../client')));
 // app.use(express.static(path.resolve(__dirname, '.static')));
 
 // lisening all get requests
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, "build", 'index.html'))
+    res.sendFile(path.resolve(__dirname, "client", 'index.html'))
 });
 
 // default massage
