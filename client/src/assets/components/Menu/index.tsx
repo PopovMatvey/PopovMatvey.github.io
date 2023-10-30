@@ -63,7 +63,6 @@ export function Menu() {
      */
     const handlerMenuItemOnClick = (event: any) => {
         const idTargetBlock = getIdTargetBlock(event.target.href);
-        alert(idTargetBlock);
 
         event.preventDefault();
 
