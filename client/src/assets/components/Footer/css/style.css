@@ -85,3 +85,12 @@ footer span {
     text-align: center;
     padding: 10px;
 }
+
+.footer-signature a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-signature a:visited{
+    color: #fff;
+}

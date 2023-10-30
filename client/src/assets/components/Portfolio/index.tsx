@@ -13,8 +13,9 @@ export function PortfolioContainer() {
     const arrayPortfolio = [
         {
             id: 0,
-            imageSrc: "./images/portfolio/first.svg",
-            href: "http://62.113.107.56:2000/",
+            imageSrc: "./images/portfolio/termobeton.png",
+            // href: "http://62.113.107.56:2000/",
+            href: "https://termobeton.tilda.ws/",
         },
         {
             id: 1,
@@ -26,11 +27,11 @@ export function PortfolioContainer() {
             imageSrc: "./images/portfolio/best-chrome.png",
             href: "http://62.113.107.56:2002/",
         },
-        {
-            id: 3,
-            imageSrc: "./images/portfolio/qr-app.png",
-            href: "http://62.113.107.56:2003/",
-        },
+        // {
+        //     id: 3,
+        //     imageSrc: "./images/portfolio/qr-app.png",
+        //     href: "http://62.113.107.56:2003/",
+        // },
     ];
 
     return (

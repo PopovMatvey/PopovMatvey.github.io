@@ -57,7 +57,7 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="footer-signature">
-                    <span>Copyright © 2023 Попов Матвей. Design by Web</span>
+                    <span>Copyright © 2023 Попов Матвей. Design by Web <a href="https://matveypopov.ru/">https://matveypopov.ru/ </a> </span>
                 </div>
             </footer>
         </>
