@@ -53,7 +53,7 @@ export function Menu() {
     /**
      * Обработчик изменения контроля мобильного меню
      */
-    const hendlerMobileNemuControlButton = () => {
+    const handlerMobileNemuControlButton = () => {
         setFlagMobileMenuControl(!flagMobileMenuControl);
     }
 
@@ -63,6 +63,7 @@ export function Menu() {
      */
     const handlerMenuItemOnClick = (event: any) => {
         const idTargetBlock = getIdTargetBlock(event.target.href);
+        alert(idTargetBlock);
 
         event.preventDefault();
 
@@ -81,7 +82,7 @@ export function Menu() {
                             <h1>{titleString}</h1>
                         </div>
                         <div className="menu-button-container">
-                            <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>
+                            <button className="mobile-menu-control" onClick={handlerMobileNemuControlButton}>
                                 <img src={cross} alt="" />
                             </button>
                         </div>
@@ -109,7 +110,7 @@ export function Menu() {
                             <h1>{titleString}</h1>
                         </div>
                         <div className="menu-button-container">
-                            <button className="mobile-menu-control" onClick={hendlerMobileNemuControlButton}>
+                            <button className="mobile-menu-control" onClick={handlerMobileNemuControlButton}>
                                 <img src={gamburger} alt="" />
                             </button>
                         </div>
